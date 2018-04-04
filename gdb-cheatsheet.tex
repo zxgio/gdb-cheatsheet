@@ -614,7 +614,7 @@ set logging redirect [on|off] & redirect only to logfile \cr
 
 \sec Debugging Targets;
 target {\it type} {\it param}&connect to machine, process, or file; e.g.
-{\tt target remote | sshpass -p{\it pw} ssh -T {\it host} \opt{{\tt -p} {\it port}} gdbserver - {\it prog} \opt{{\it args}}} \cr
+{\tt target remote | sshpass -p{\it pw} ssh -T \opt{{\tt -p} {\it port}} \opt{user\tt @}{\it host} gdbserver - {\it prog} \opt{{\it args}}} \cr
 %help target&display available targets\cr
 attach {\it param}&connect to another process\cr
 detach&release target from GDB control\cr
