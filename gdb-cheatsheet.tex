@@ -662,6 +662,32 @@ forw {\it regex}&search following source lines for {\it regex}\cr
 rev {\it regex}&search preceding source lines for {\it regex}\cr
 \endsec
 
+\vfill\eject
+
+\sec Text User Interface (TUI);
+gdb --tui&start GDB in TUI mode (also \ctl{x} \ctl{a})\cr
+\ctl{x} 1&one window layout\cr
+\ctl{x} 2&one windows layout\cr
+\ctl{o} 2&change active window\cr
+Left, Up, Right, Down&scroll active window\cr
+PgUp, PgDown&scroll active window by page up/down\cr
+\ctl{l}&refresh the screen\cr
+layout {\it NAME}\cr
+\quad next&next layout\cr
+\quad prev&previous layout\cr
+\quad src&source and command windows\cr
+\quad asm&assembly and command windows\cr
+\quad split&source, assembly, and command windows\cr
+\quad regs&display regs and current window\cr
+tui reg {\it GROUP}\cr
+\quad next&cycle though all available reg. groups\cr
+\quad prev&cycle though in reverse order\cr
+\quad general&general purpose registers\cr
+\quad float&floating point registers\cr
+\quad vector&vector registers\cr
+\quad all&all registers\cr
+\endsec
+
 % \sec GDB under GNU Emacs;
 % M-x gdb&run GDB under Emacs\cr
 % \ctl{h} m&describe GDB mode\cr
