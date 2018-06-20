@@ -688,6 +688,19 @@ tui reg {\it GROUP}\cr
 \quad all&all registers\cr
 \endsec
 
+\sec Reverse execution;
+record&start recording\cr
+record stop&stop recording\cr
+reverse-continue \opt{\it count}\par
+rc \opt{\it count}&start executing in reverse; if {\it count} specified, ignore
+this breakpoint next {\it count} times\cr
+reverse-step \opt{\it count}&execute in reverse until another line reached; repeat {\it count} times if specified\cr
+reverse-stepi \opt{\it count}&execute a machine instruction in reverse; repeat {\it count} times if specified\cr
+reverse-next \opt{\it count}&execute next line (including function calls) in reverse; repeat {\it count} times if specified\cr
+reverse-nexti \opt{\it count}&execute a machine instruction (including function calls) in reverse; repeat {\it count} times if specified\cr
+reverse-finish&return to a point where current function was called\cr
+\endsec
+
 \sec GDB under GNU Emacs;
 M-x gdb&run GDB under Emacs\cr
 \ctl{h} m&describe GDB mode\cr
